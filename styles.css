@@ -114,7 +114,7 @@ img {
 }
 
 .section {
-    padding: 2rem 0 4rem;
+    padding: 3rem 0 3rem;
 }
 
 .section-title {
@@ -147,7 +147,7 @@ img {
 .header {
     width: 100%;
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     z-index: var(--index-fixed);
     background-color: var(--light-color);
@@ -219,20 +219,20 @@ img {
 @media screen and (max-width: 767px) {
     .nav-menu {
         position: fixed;
-        bottom: -100%;
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: var(--light-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: var(--box-shadow-dark);
-        border-radius: 1.5rem 1.5rem 0 0;
+        border-radius: 0 0 1.5rem 1.5rem;
         transition: .5s;
     }
 }
 
 /* shows menu on mobile version */
 .show-menu {
-    bottom: 0;
+    top: 0;
 }
 
 /* active nav menu */
