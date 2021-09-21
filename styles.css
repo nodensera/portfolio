@@ -56,6 +56,9 @@ body {
     /* scroll bar */
     --scroll-bar-color: hsl(240, 100%, 99%);
     --scroll-thumb-color: hsla(92, 57%, 51%, 0.466);
+
+    /* parent circle color variable */
+    --parent-circle-color: hsla(212, 99%, 43%, 0.333);
 }
 
 /* dark theme styles */
@@ -73,6 +76,7 @@ body.dark-theme {
     --input-color: hsl(0, 0%, 55%);
     --scroll-bar-color: hsl(207, 11%, 16%);
     --scroll-thumb-color: hsl(200, 3%, 23%);
+    --parent-circle-color: hsla(0, 0%, 55%, 0.333);
 }
 
 .nav-btn {
@@ -204,8 +208,8 @@ img {
 
 .nav-close {
     position: absolute;
-    right: 1.3rem;
-    bottom: .5rem;
+    right: 1.25rem;
+    top: .5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--primary-color);
@@ -213,6 +217,76 @@ img {
 
 .nav-close:hover {
     color: var(--primary-color-alt);
+}
+
+#parent-circle {
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+    border: .1vw solid var(--parent-circle-color);
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    animation: rotate 25s infinite linear;
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    width: 16%;
+    height: 16%;
+    margin: -8%;
+    border-radius: 50%;
+    top: 50%; 
+    left: 50%;
+}
+
+.html-logo {
+    background-color: hsl(13, 77%, 52%);
+    transform: translate(29.5vw); 
+}
+
+.css-logo {
+    background-color: hsl(207, 94%, 55%);
+    transform: rotate(72deg) translate(29.5vw) rotate(-72deg);
+}
+
+.js-logo {
+    background-color: hsl(52, 84%, 63%);
+    transform: rotate(144deg) translate(29.5vw) rotate(-144deg);
+}
+
+.react-logo {
+    background-color: hsl(192, 95%, 68%);
+    transform: rotate(216deg) translate(29.5vw) rotate(-216deg);
+}
+
+.csharp-logo {
+    background-color: hsl(306, 36%, 45%);
+    transform: rotate(288deg) translate(29.5vw) rotate(-288deg);
+}
+
+.centered-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    color: var(--light-color);
+    text-transform: uppercase;
+    
+    
+    font-size: .7rem;
+}
+  
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /* mobile menu media query */
@@ -332,15 +406,22 @@ img {
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: 1rem;
+    padding: .3rem .85rem;
     border-radius: .5rem;
     font-weight: 500;
 }
 
 .button:hover {
     background-color: var(--primary-color-alt);
-    margin-left: .5rem;
+}
+
+.button:hover i {
+    transform: translateX(.25rem);
     transition: 0.5s;
+}
+
+.portfolio-button:hover {
+    background-color: var(--primary-color-alt);
 }
 
 .button-cv {
@@ -348,14 +429,18 @@ img {
     position: absolute;
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: 1rem;
+    padding: .3rem .85rem;
     border-radius: .5rem;
     font-weight: 500;
 }
 
 .button-cv:hover {
     background-color: var(--primary-color-alt);
-    margin-top: .5rem;
+    transition: 0.5s;
+}
+
+.button-cv:hover i {
+    transform: translateY(.25rem);
     transition: 0.5s;
 }
 
@@ -376,9 +461,9 @@ img {
 }
 
 .button-white {
-    padding: 1rem;
     color: var(--light-color);
     border-radius: .5rem;
+    padding: .3rem .85rem;
     font-weight: 500;
     background-color: var(--light-color);
     color: var(--primary-color);
@@ -401,6 +486,7 @@ img {
 .button-flex {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* about section styles */
@@ -705,7 +791,7 @@ img {
 }
 
 .portfolio-content {
-    padding: 0 1.5rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .portfolio-img {
@@ -727,7 +813,7 @@ img {
 .portfolio-button {
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: .75rem 1rem;
+    padding: .3rem .85rem;
     border-radius: .5rem;
     font-weight: 500;
 }
@@ -752,7 +838,7 @@ img {
 }
 
 .swiper-pagination {
-    bottom: -.5px !important;
+    bottom: -.6px !important;
 }
 
 .swiper-portfolio-icon {
@@ -774,6 +860,10 @@ img {
 
 .swiper-button-next, .swiper-button-prev {
     margin: -.5rem;
+}
+
+.swiper-pagination-bullets-dynamic {
+    margin-bottom: 1.5rem;
 }
 
 /* project section styles */
@@ -951,7 +1041,7 @@ img {
 .scroll-top {
     position: fixed;
     right: 1rem;
-    bottom: -5%;
+    bottom: -6%;
     background-color: var(--primary-color);
     opacity: .8;
     padding: 0 .3rem;
@@ -971,7 +1061,7 @@ img {
 
 /* shows scroll up button */
 .show-scroll {
-    bottom: 5rem;
+    bottom: 1rem;
 }
 
 /* scroll bar */
