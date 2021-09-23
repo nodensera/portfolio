@@ -32,8 +32,8 @@ body {
     --secondary-color: hsl(212, 99%, 43%);
     --secondary-color-alt: hsl(212, 87%, 50%);
     --tertiary-color: hsl(1, 59%, 45%);
-    --title-color: hsl(250, 8%, 15%);
-    --text-color: hsl(250, 8%, 45%);
+    --title-color: hsl(0, 5%, 30%);
+    --text-color: hsl(330, 3%, 30%);
     --text-color-light: hsl(250, 8%, 65%);
     
     /* typography & font variables */
@@ -50,6 +50,7 @@ body {
     /* shadow variable */
     --box-shadow-dark: 0 -1px 4px rgba(0, 0, 0, .15);
     --box-shadow-dark-alt: 0 -1px 4px rgba(66, 63, 63, 0.3);
+    --box-shadow-dark-sec: 0 -1px 4px rgba(0, 0, 0, 0.336);;
     
     /* input color variable */
     --input-color: hsla(92, 39%, 45%, 0.192);
@@ -176,6 +177,10 @@ img {
     color: var(--primary-color);
 }
 
+.logo-first-letter {
+    font-size: 1.5rem;
+}
+
 .nav-toggle {
     font-size: 1.1rem;
     cursor: pointer;
@@ -205,6 +210,7 @@ img {
 
 .nav-icon {
     font-size: 1.5rem;
+    padding-bottom: .5rem;
 }
 
 .nav-close {
@@ -298,8 +304,8 @@ img {
         left: 0;
         width: 100%;
         background-color: var(--light-color);
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: var(--box-shadow-dark);
+        padding: 3rem 1.5rem 3rem;
+        box-shadow: var(--box-shadow-dark-sec);
         border-radius: 0 0 1.5rem 1.5rem;
         transition: .5s;
     }
