@@ -9,7 +9,7 @@
     <!-- linear icons -->
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <!-- fontawesome link -->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- iconscout link -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Portfolio</title>
@@ -75,19 +75,28 @@
     <div class="main">
         <!-- home section -->
         <section class="home section" id="home">
-            <div class="home-container container grid">
+            <div class="container grid">
                 <div class="home-content grid">
                     <div class="home-social">
-                        <a href="#" target="_blank" class="home-social-icon">
+                        <div class="footer-item home-about">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="home-social">
+                        <a href="https://www.linkedin.com/in/noden-sera-9653bb219/" target="_blank" class="home-social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" target="_blank" class="home-social-icon">
+                        <a href="https://github.com/nodensera" target="_blank" class="home-social-icon">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" target="_blank" class="home-social-icon">
+                        <a href="https://twitter.com/nonesdenn" target="_blank" class="home-social-icon">
                             <i class="fab fa-twitter"></i>
                         </a>                        
-                    </div>
+                    </div>-->
 
                     <div class="home-content home-main-text">
                         <h3 class="home-subtitle">Web Developer</h3>
@@ -119,7 +128,8 @@
 
                 <div class="pad-l">
                     <a href="#portfolio" class="button button-flex">
-                        Projects <i class="uil uil-angle-right-b button-icon"></i>
+                        Projects 
+                        <i class="uil uil-angle-right-b button-icon"></i>
                     </a>
                 </div>
                 <div class="home-scroll">
@@ -433,33 +443,7 @@
             <span class="section-subtitle">Get in touch</span>
 
             <div class="contact-container container grid">
-                <div>
-                    <div class="contact-information">
-                        <i class="uil uil-phone contact-icon"></i>
-                        
-                        <div>
-                            <h3 class="contact-title">Phone</h3>
-                            <span class="contact-subtitle">999-555-7845-866</span>
-                        </div>
-                    </div>
-                    <div class="contact-information">
-                        <i class="uil uil-phone contact-icon"></i>
-                        
-                        <div>
-                            <h3 class="contact-title">Email</h3>
-                            <span class="contact-subtitle">info@nodensera.com</span>
-                        </div>
-                    </div>
-                    <div class="contact-information">
-                        <i class="uil uil-map-marker contact-icon"></i>
-                        
-                        <div>
-                            <h3 class="contact-title">Location</h3>
-                            <span class="contact-subtitle">Guayaquil, Ecuador</span>
-                        </div>
-                    </div>
-                </div>
-
+                
                 <form action="" class="contact-form grid">
                     <div class="contact-inputs grid">
                         <div class="contact-content">
@@ -478,57 +462,40 @@
 
                     <a href="#" class="button button-flex">
                         Send Message
-                        <i class="uil uil-message button-icon"></i>
+                        <i class="uil uil-angle-right-b button-icon"></i>
                     </a>
                 </form>
             </div>
         </section>
 
         <!-- footer section -->
-        <footer class="footer">
-            <div class="footer-bg">
-                <div class="footer-container container grid">
-                    <div>
-                        <h1 class="footer-title">ns</h1>
-                        <span class="footer-subtitle">Frontend developer</span>
-                    </div>
-
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#services" class="footer-link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer-link">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-socials">
-                        <a href="#" target="_blank" class="footer-social">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="#" target="_blank" class="footer-social">
-                            <i class="uil uil-facebook"></i>
-                        </a>
-                        <a href="#" target="_blank" class="footer-social">
-                            <i class="uil uil-twitter"></i>
-                        </a>
+        <footer class="footer footer-container section">
+                <div class="footer-item footer-about">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-
-                <p class="footer-copy">&#169; Noden Sera</p>
-            </div>
+                <div class="footer-item footer-quick-links">
+                    <ul>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#project-cont">quote</a></li>
+                        <li><a href="#testomial-sect">testimonial</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                    <div class="copy">
+                        &#169 Noden Sera 2021
+                    </div>
+                </div>
         </footer>
 
         <!-- scroll to top button -->
         <a href="#" class="scroll-top" id="scroll-up">
             <i class="uil uil-arrow-up scroll-top-icon"></i>
         </a>
-
     </div>
-
 
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 
