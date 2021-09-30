@@ -13,16 +13,15 @@
 
 html {
      scroll-behavior: smooth;
-     overflow-x: hidden;
 }
 
 body {
-     margin: 0 0 3rem 0;
-     font-family: 'Poppins', sans-serif;
-     font-size: var(--normal-font-size);
-     background-color: var(--light-color);
-     color: var(--text-color);
-  
+    margin: 0 0 3rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--normal-font-size);
+    background-color: var(--light-color);
+    color: var(--text-color);
+    overflow-x: hidden !important;
 }
 
 /* global variables */
@@ -771,6 +770,12 @@ img {
 /* contact section styles */
 .contact-container {
     row-gap: 3rem;
+}
+
+.contact-button {
+    font-family: inherit;
+    font-size: var(--normal-font-size);
+    border: none;
 }
 
 .contact-information {

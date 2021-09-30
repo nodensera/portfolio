@@ -335,41 +335,34 @@
             </div>
         </section>
 
-        
-
-        
-
         <!-- contact section -->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
-            <span class="section-subtitle">Get in touch</span>
+            <p class="section-subtitle">Get in touch</p>
 
             <div class="contact-container container grid">
-                
-                <form action=”mailto:info@nodensera.com” method=”POST”
-                enctype=”multipart/form-data”
-                name=”EmailForm” class="contact-form grid">
-                    <div class="contact-inputs grid">
-                        <div class="contact-content">
-                            <label for="" class="contact-label">Name</label>
-                            <input type="text" class="contact-input">
-                        </div>
-                        <div class="contact-content">
-                            <label for="" class="contact-label">Email</label>
-                            <input type="email" class="contact-input">
-                        </div>
+                <form class="contact-form grid" action="https://formsubmit.co/nodensera@gmail.com" method="POST">
+                    <div class="contact-content">
+                        <label for="" class="contact-label">Name</label>
+                        <input type="text" name="name" class="contact-input" required >
+                    </div>
+                    <div class="contact-content">
+                        <label for="" class="contact-label">Email</label>
+                        <input type="email" name="email" class="contact-input" required>
                     </div>
                     <div class="contact-content">
                         <label for="" class="contact-label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+                        <textarea type="text" name="Message" id="" cols="0" rows="7" class="contact-input" required></textarea>
                     </div>
-
-                    <a href="#" class="button button-flex">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="thanks! I'll get back to you soon">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contact">
+                    <button type="submit" class="button button-flex contact-button">
                         Send Message
                         <i class="uil uil-angle-right-b button-icon"></i>
-                    </a>
-                </form>
-            </div>
+                    </button>
+                 </form>
+            </div>     
         </section>
 
         <!-- footer section -->
