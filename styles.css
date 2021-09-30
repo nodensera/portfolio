@@ -651,6 +651,7 @@ img {
     overflow: visible !important;
 }
 
+
 .swiper-button-prev:after, 
 .swiper-rtl .swiper-button-next:after, 
 .swiper-button-next:after, 
@@ -676,7 +677,7 @@ img {
 .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination-bullet {
-    outline: none;
+    outline: none !important;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -891,6 +892,10 @@ img {
 
 .scroll-top:hover {
     background-color: var(--primary-color-alt);
+}
+
+.scroll-top:focus {
+    outline: none;
 }
 
 .scroll-top-icon {
@@ -1278,7 +1283,6 @@ img {
     }
     
 }
-
 
 
 
