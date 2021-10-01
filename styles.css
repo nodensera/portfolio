@@ -646,7 +646,7 @@ img {
     background-color: var(--primary-color-alt);
 }
 
-.swiper {
+.portfolio-swiper {
     overflow: visible !important;
 }
 
@@ -725,11 +725,12 @@ img {
     padding: 1rem;
 }
 
-/* testimonials section styles */
-.testimonial-container {
-    margin-top: 3.5rem;
-}
 
+
+
+
+
+/* testimonials section styles */
 .testimonial-data, .testimonial-header {
     display: flex;
 }
