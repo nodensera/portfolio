@@ -778,6 +778,7 @@ img {
     font-family: inherit;
     font-size: var(--normal-font-size);
     border: none;
+    cursor: pointer;
 }
 
 .contact-information {
